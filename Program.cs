@@ -18,6 +18,9 @@ namespace RPG
         public static bool Hasopenedchest = false;
         public static string Swordtaken = "";
         public static string myPath ="";
+        public static bool Attacksnek = false;
+        public static bool Runaway = false;
+
         static void Main(string[] args)
         {
             output("What is your name?");
@@ -108,7 +111,6 @@ namespace RPG
 
             do
             {
-
                 string IsPlayerLeaving = inputYesNo();
                 //IsPlayerLeaving = IsPlayerLeaving.ToLower();
                 // Tolower() allows you to use any key as either a capital or lower case letter
@@ -132,7 +134,7 @@ namespace RPG
             } while (leave == false);
 
                 output("After you leave you see two paths");
-            output("which path do you go down? L or R");
+                output("which path do you go down? L or R");
 
             myPath = inputString();
            
@@ -161,8 +163,9 @@ namespace RPG
                 output("You start being more cautious");
                 output("While you are walking you faintly hear a twig break, you are on edge now");
                 output("Suddenly a massive snake lunges at you");
-                output("what do you do?");
-                output("");
+                output("what do you do? do you attack or run away?");
+                inputString();
+
             }
             if (Firstleft == true)
             {
