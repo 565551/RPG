@@ -164,8 +164,6 @@ namespace RPG
                 output("While you are walking you faintly hear a twig break, you are on edge now");
                 output("Suddenly a massive snake lunges at you");
                 output("what do you do? do you attack or run away?");
-                inputString();
-
             }
             if (Firstleft == true)
             {
